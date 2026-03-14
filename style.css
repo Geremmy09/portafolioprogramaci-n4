@@ -114,4 +114,107 @@ footer {
     background: #000;
     color: #555;
     border-top: 1px solid #222;
+
+    /* --- SECCIÓN DE COMENTARIOS --- */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    background: #222;
+    border: 1px solid #444;
+    color: var(--text-light);
+    padding: 10px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: #000;
+}
+
+/* --- LISTA DE NOTAS --- */
+.notas-container {
+    margin-top: 40px;
+    display: grid;
+    gap: 15px;
+}
+
+.nota-card {
+    background: #1f1f1f;
+    padding: 15px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.nota-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.nota-header h4 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.nota-fecha {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.nota-acciones {
+    margin-top: 15px;
+}
+
+.nota-acciones a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.btn-editar {
+    background: #333;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.btn-editar:hover { background: var(--primary-color); color: #000; }
+
+.btn-eliminar {
+    background: #333;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+.btn-eliminar:hover { background: var(--secondary-color); color: #fff; }
 }
